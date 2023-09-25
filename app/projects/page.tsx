@@ -24,13 +24,15 @@ export default async function Projects() {
                     project.techStack.map((tech, i) => {
                       return (
                         <>
-                          <span> {tech}</span>
-                          {project.techStack &&
-                          i + 1 < project.techStack.length ? (
-                            <span>, </span>
-                          ) : (
-                            ""
-                          )}
+                          <span key={i}>
+                            {tech}
+                            {project.techStack &&
+                            i + 1 < project.techStack.length ? (
+                              <span>, </span>
+                            ) : (
+                              ""
+                            )}
+                          </span>
                         </>
                       );
                     })}

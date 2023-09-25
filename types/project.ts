@@ -1,6 +1,6 @@
 export type Project = {
   name: string;
   link: string;
-  techStack?: string[];
+  techStack: string[];
   image?: string;
 };
