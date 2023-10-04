@@ -4,10 +4,14 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/projects",
+        destination: "/team",
         permanent: true,
       },
     ];
+  },
+  images: {
+    domains: ["team-api-508w.onrender.com"],
+    unoptimized: true,
   },
 };
 
